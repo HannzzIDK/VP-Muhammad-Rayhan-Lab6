@@ -1,0 +1,9 @@
+1.in my opinion, in this project, the model is actually the data inside the application, so on my opinion is where the data lives (CMIIW) also where the services of the app lives. The view is just the ui element of the app, where its purpose is to only to display data. whereas viewmodel is basically the one who notifies the view to change its state its basically the one who keeps everything in check (the main business logic is in here so too so yeah)
+
+2.Well... in my implementation, a book that has an active loan is assigned with the borrowed status, which makes it unavailable for borrowing by another student, so if the student want to borrow it, they need to wait for the book to be returned and the book status is available for borrowing again
+
+3.in my opinion, it's counterintuitive to the general concept of mvvm, basically it's saying "everything's at it's place, and there is a place for everything(shocking big hero 6 reference)", in other words the quote said that everything has it's own place, also to practice DRY concept "don't repeat yourself" by putting the logic in the services and viewmodel, it reduces the chance of logics overlapping with each other causing errors affecting user experience
+
+4.the book being overdue means that the book is still in the borrowing status, the borrower (in this case the student), each week (7 days), the price of the book loan will increment by 5000 every single week until reaching the 6 month mark (approximately 24-26 weeks), where the book will be marked as missing and the borrower will be charged for the full book price (because duh, it's missing)
+
+5.in the code, what need to be changed is in the file **fine_calculator_service.dart**, i hardcided the base price increments in 5000, just like in the line that said **static const int weeklyFineRate = 5000;**, we can update this line from it's value. update it from 5000 to 7000 and we're golden
