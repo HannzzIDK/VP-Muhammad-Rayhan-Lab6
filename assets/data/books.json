@@ -1,0 +1,23 @@
+[
+  {
+    "id": "B001",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "price": 150000,
+    "status": "available"
+  },
+  {
+    "id": "B002",
+    "title": "Design Patterns",
+    "author": "Erich Gamma",
+    "price": 200000,
+    "status": "available"
+  },
+  {
+    "id": "B003",
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "price": 180000,
+    "status": "available"
+  }
+]
